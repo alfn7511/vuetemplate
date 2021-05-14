@@ -1,0 +1,24 @@
+{
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },  
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "prettier.printWidth": 80,
+    "prettier.tabWidth":2,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.bracketSpacing": true,
+    "prettier.trailingComma" : "none",
+    "prettier.arrowParens" : "always",
+    "prettier.proseWrap": "always",
+    "workbench.startupEditor": "newUntitledFile"
+}
