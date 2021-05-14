@@ -1,0 +1,55 @@
+{
+  "tags": {
+    "language": [
+      {
+        "id": "ts",
+        "color": "ts",
+        "label": "TypeScript"
+      },
+      {
+        "id": "py",
+        "color": "python",
+        "label": "Python"
+      },
+      {
+        "id": "other",
+        "color": "#ffa500",
+        "label": "Other"
+      }
+    ],
+    "web": [
+      {
+        "id": "vue",
+        "color": "vue",
+        "label": "Vue"
+      },
+      {
+        "id": "react",
+        "color": "react",
+        "label": "React"
+      },
+      {
+        "id": "angular",
+        "color": "angular",
+        "label": "Angular"
+      }
+    ]
+  },
+  "content": [
+    {
+      "name": "CyBot",
+      "date": "2020.02.04",
+      "image": "contents/sample.jpg",
+      "description": "Cyworld data crawler!",
+      "tag": ["py"],
+      "url": "https://github.com/leegeunhyeok/cyworld-bot"
+    },
+    {
+      "name": "Web Project",
+      "date": "2020.01.01",
+      "image": "contents/sample.jpg",
+      "description": "Example project!",
+      "tag": ["vue", "react", "angular"]
+    }
+  ]
+}

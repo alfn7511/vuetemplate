@@ -1,0 +1,159 @@
+@import './responsive';
+@import './icon';
+
+$radius: 12px;
+$blur: 16px;
+$dock-height: 4.5rem;
+
+// For window top header button
+$red: #ff5f57;
+$green: #28c63f;
+$yellow: #f5bd4f;
+$gray: #dbdbdc;
+
+$colors: (
+  // basics
+    red: #cb2c38,
+  green: #64b587,
+  yellow: #f4df4f,
+  blue: #4179c1,
+  gray: $gray,
+  // ------
+    js: #f4df4f,
+  ts: #4179c1,
+  html: #e34c26,
+  css: #563d7c,
+  scss: #c6538c,
+  python: #3f7287,
+  java: #a7742f,
+  kotlin: #f18e33,
+  c: #555555,
+  cpp: #e1597e,
+  cs: #178600,
+  objectivec: #438eff,
+  swift: #ffac45,
+  rust: #dea584,
+  go: #00add8,
+  dart: #00b4ab,
+  php: #4f5d95,
+  scala: #c22d40,
+  perl: #0298c3,
+  haskell: #5e5086,
+  r: #198ce7,
+  shell: #9ddd66,
+  vue: #64b587,
+  react: #81d8f7,
+  angular: #cb2c38,
+  pwa: #5023c0,
+  node: #94ca4a,
+  git: #df5b40,
+  docker: #5caeeb,
+  vim: #4b9c54
+);
+
+@each $name, $color in $colors {
+  &.background-#{$name} {
+    background-color: $color !important;
+  }
+
+  &.text-#{$name} {
+    color: $color !important;
+  }
+}
+
+$theme: (
+  light: (
+    pure: #ffffff,
+    primary: #eff2f5,
+    secondary: #f3f7fa,
+    teriary: #ffffff,
+    border: #d8d4dd,
+    text: #282828,
+    mask: #000000,
+  ),
+  dark: (
+    pure: #1c1c1e,
+    primary: #262c32,
+    secondary: #3a3f42,
+    teriary: #5c6165,
+    border: #3b4146,
+    text: #e0e0e0,
+    mask: #ffffff,
+  ),
+);
+
+@mixin theme {
+  @each $theme-name, $palette in $theme {
+    // Temp theme map
+    $map-theme: () !global;
+
+    @each $key, $color in $palette {
+      $map-theme: map-merge(
+        $map-theme,
+        (
+          $key: $color,
+        )
+      ) !global;
+    }
+
+    body.#{$theme-name} {
+      @content;
+    }
+
+    // Clear map
+    $map-theme: null !global;
+  }
+}
+
+// Get color value from temp map
+@function t($key) {
+  @return map-get($map-theme, $key);
+}
+
+$elevation: (
+  lowest: 0,
+  low: 1,
+  middle: 2,
+  high: 3,
+  highest: 4,
+);
+
+@function elevation($key) {
+  @return map-get($elevation, $key);
+}
+
+@mixin page {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'NanumSquare', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  font-size: 12px;
+
+  @include size(sm) {
+    font-size: 14px;
+  }
+}
+
+html,
+body,
+#app {
+  @include page;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  outline: 0;
+}

@@ -1,0 +1,38 @@
+{
+  "publicPath": "/",
+  "app": {
+    "name": "Résume",
+    "startUrl": "/"
+  },
+  "title": "Résume | Geunhyeok LEE",
+  "ga": "UA-000000000-0",
+  "introText": ["For better", "Web experience."],
+  "profile": {
+    "name": "Geunhyeok LEE",
+    "email": "dev.ghlee@gmail.com",
+    "photo": "avatar.png",
+    "introduce": "Makes web better",
+    "social": [
+      {
+        "icon": "github",
+        "label": "leegeunhyeok",
+        "url": "https://github.com/leegeunhyeok"
+      },
+      {
+        "icon": "web",
+        "url": "https://geundung.dev"
+      }
+    ],
+    "skill": [
+      {
+        "label": "Vue.js",
+        "color": "vue"
+      },
+      {
+        "label": "Other",
+        "color": "ts"
+      }
+    ],
+    "hobby": ["프로그래밍", "운동"]
+  }
+}

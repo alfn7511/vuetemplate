@@ -1,0 +1,22 @@
+$max-col: 12;
+$widths: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+@mixin size($prefix) {
+  @if (map-has-key($map: $widths, $key: $prefix)) {
+    $px: map-get(
+      $map: $widths,
+      $key: $prefix,
+    );
+    @media screen and (min-width: $px) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
