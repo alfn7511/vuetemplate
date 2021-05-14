@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "vuetemplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,7 +28,8 @@
     "vue-cli-plugin-vuetify": "^0.5.0",
     "vue-slick-carousel": "^1.0.6",
     "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.4.3"
+    "vuetify-loader": "^1.4.3",
+    "x2js": "^3.4.1"
   },
   "eslintConfig": {
     "root": true,
