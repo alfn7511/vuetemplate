@@ -12,5 +12,15 @@ module.exports = {
     optimization: {
       splitChunks: false
     }
+  },
+  css: {
+    sourceMap: true,
+    extract: false
+    // loaderOptions: {
+    //   css: {
+    //     localIdentName: '[name]-[hash]',
+    //     camelCase: 'only'
+    //   }
+    // }
   }
 }
