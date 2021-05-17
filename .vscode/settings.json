@@ -12,7 +12,7 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "prettier.printWidth": 80,
+    "prettier.printWidth": 10000000,
     "prettier.tabWidth":2,
     "prettier.semi": false,
     "prettier.singleQuote": true,

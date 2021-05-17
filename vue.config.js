@@ -6,7 +6,7 @@ module.exports = {
       errors: true
     }
   },
-  productionSourceMap: true,
+  productionSourceMap: false,
   configureWebpack: {
     devtool: 'source-map',
     optimization: {
