@@ -44,7 +44,22 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "camelcase": 0,
+      "semi": 0,
+      "no-multi-spaces": 0,
+      "spaced-comment": 0,
+      "comma-spacing": 0,
+      "no-new-wrappers": 0,
+      "no-control-regex": 0,
+      "no-console": 0,
+      "no-debugger": 0,
+      "no-tabs": 0,
+      "space-before-function-paren": 0,
+      "no-unused-vars": 0,
+      "no-useless-escape": 0,
+      "vue/no-unused-components": 0
+    }
   },
   "browserslist": [
     "> 1%",
