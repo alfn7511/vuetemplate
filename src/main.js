@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import '@/plugins/vuetify'
 import '@/plugins/components'
-import '@/assets/styles/app.scss'
+// import '@/assets/styles/app.scss'
 import x2js from 'x2js'
 
 Vue.prototype.$x2js = new x2js()
